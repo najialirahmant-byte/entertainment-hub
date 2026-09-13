@@ -1,0 +1,117 @@
+.content-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.content-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(229, 9, 20, 0.3);
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  padding-top: 150%;
+}
+
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.content-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.play-btn, .favorite-btn {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.3s;
+}
+
+.play-btn:hover {
+  background: #f20a1f;
+}
+
+.favorite-btn {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.favorite-btn:hover, .favorite-btn.active {
+  background: #e50914;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.card-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.rating {
+  color: #e50914;
+  font-weight: bold;
+}
+
+.type {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.genre-tag {
+  background: rgba(229, 9, 20, 0.2);
+  color: #e50914;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+}

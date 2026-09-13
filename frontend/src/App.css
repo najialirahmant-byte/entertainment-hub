@@ -1,0 +1,15 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+main {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  color: #ffffff;
+}
